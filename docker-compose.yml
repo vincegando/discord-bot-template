@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  discord-template-bot:
+    build: .
+    container_name: discord-template-bot
+    platform: linux/amd64
+    environment:
+      INTERVAL_DURATION: 30
+      DISCORD_TOKEN: BOT_DISCORD_TOKEN
+      DISCORD_CHANNEL_ID: 1234
